@@ -6,4 +6,4 @@ var Any = (function () {
     return Any;
 }());
 exports.Any = Any;
-//# sourceMappingURL=C:/git/github/kirakishin/json2typescript/src/json2typescript/any.js.map
+//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/src/json2typescript/any.js.map

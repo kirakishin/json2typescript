@@ -526,6 +526,16 @@ export class JsonConvert {
             return mappings[directMappingName];
         }
 
+        // Get mapping from super classes if possible
+        let prototype = Object.getPrototypeOf(instance.constructor);
+        while(prototype.name){
+            const superClassMappingName = prototype.name + "." + propertyName;
+            if (typeof(mappings[superClassMappingName]) !== "undefined") {
+                return mappings[superClassMappingName];
+            }
+            prototype = Object.getPrototypeOf(prototype);
+        }
+
         // No mapping was found, try to find some
         const indirectMappingNames: string[] = Object.keys(mappings).filter(key => key.indexOf("." + propertyName) >= 0);
         if (indirectMappingNames.length > 0) {

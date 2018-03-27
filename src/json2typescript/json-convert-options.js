@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var Settings = (function () {
     function Settings() {
     }
-    Settings.MAPPING_PROPERTY = "__jsonconvert__mapping__";
-    Settings.MAPPER_PROPERTY = "__jsonconvert__mapper__";
     return Settings;
 }());
+Settings.MAPPING_PROPERTY = "__jsonconvert__mapping__";
+Settings.MAPPER_PROPERTY = "__jsonconvert__mapper__";
 exports.Settings = Settings;
 ;
 var MappingOptions = (function () {
@@ -20,4 +20,4 @@ var MappingOptions = (function () {
     return MappingOptions;
 }());
 exports.MappingOptions = MappingOptions;
-//# sourceMappingURL=C:/git/github/kirakishin/json2typescript/src/json2typescript/json-convert-options.js.map
+//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/src/json2typescript/json-convert-options.js.map

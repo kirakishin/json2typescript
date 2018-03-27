@@ -236,6 +236,14 @@ var JsonConvert = (function () {
         if (typeof (mappings[directMappingName]) !== "undefined") {
             return mappings[directMappingName];
         }
+        var prototype = Object.getPrototypeOf(instance.constructor);
+        while (prototype.name) {
+            var superClassMappingName = prototype.name + "." + propertyName;
+            if (typeof (mappings[superClassMappingName]) !== "undefined") {
+                return mappings[superClassMappingName];
+            }
+            prototype = Object.getPrototypeOf(prototype);
+        }
         var indirectMappingNames = Object.keys(mappings).filter(function (key) { return key.indexOf("." + propertyName) >= 0; });
         if (indirectMappingNames.length > 0) {
             return mappings[indirectMappingNames[0]];
@@ -392,4 +400,4 @@ var JsonConvert = (function () {
     return JsonConvert;
 }());
 exports.JsonConvert = JsonConvert;
-//# sourceMappingURL=C:/git/github/kirakishin/json2typescript/src/json2typescript/json-convert.js.map
+//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/src/json2typescript/json-convert.js.map
