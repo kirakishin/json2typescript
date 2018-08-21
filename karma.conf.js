@@ -11,9 +11,13 @@ module.exports = function (config) {
             'test/**/*.ts',
             'src/**/*.ts'
         ],
+        exclude: [
+            'test/**/*.d.ts',
+            'src/**/*.d.ts'
+        ],
         preprocessors: {
-            'src/**/*.ts': ['karma-typescript'],
-            'test/**/*.ts': ['karma-typescript']
+            'src/**/*!(d).ts': ['karma-typescript'],
+            'test/**/*!(d).ts': ['karma-typescript']
         },
         reporters: ['mocha', 'karma-typescript'],
         browsers: ['PhantomJS'],

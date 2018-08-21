@@ -1,3 +1,9 @@
+# v1.1.0 (2018-08-21)
+
+## Bug Fixes
+
+* ignoring `*.d.ts` files with karma (theses files hasn't to be tested)
+
 # v1.0.5 (2017-09-14)
 
 ## Features
