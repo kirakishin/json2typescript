@@ -11,4 +11,4 @@ exports.JsonProperty = json_convert_decorators_1.JsonProperty;
 exports.JsonConverter = json_convert_decorators_1.JsonConverter;
 var any_1 = require("./src/json2typescript/any");
 exports.Any = any_1.Any;
-//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/index.js.map
+//# sourceMappingURL=/Users/stephanechevreux/projects/json2typescript/index.js.map

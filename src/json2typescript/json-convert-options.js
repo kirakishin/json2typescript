@@ -20,4 +20,4 @@ var MappingOptions = (function () {
     return MappingOptions;
 }());
 exports.MappingOptions = MappingOptions;
-//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/src/json2typescript/json-convert-options.js.map
+//# sourceMappingURL=/Users/stephanechevreux/projects/json2typescript/src/json2typescript/json-convert-options.js.map

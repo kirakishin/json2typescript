@@ -4,6 +4,10 @@
 
 * ignoring `*.d.ts` files with karma (theses files hasn't to be tested)
 
+## Features
+
+* `JsonCustomConvert` deserialize and serialize method has now the parent as second argument. useful if you need to convert the data of a property depending from another property
+
 # v1.0.5 (2017-09-14)
 
 ## Features

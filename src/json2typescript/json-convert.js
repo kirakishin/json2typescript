@@ -183,7 +183,7 @@ var JsonConvert = (function () {
                 "\tJSON property: \n\t\t" + jsonKey + "\n\n");
         }
         try {
-            json[jsonKey] = customConverter !== null ? customConverter.serialize(classInstancePropertyValue) : this.verifyProperty(expectedJsonType, classInstancePropertyValue, true);
+            json[jsonKey] = customConverter !== null ? customConverter.serialize(classInstancePropertyValue, instance) : this.verifyProperty(expectedJsonType, classInstancePropertyValue, true);
         }
         catch (e) {
             throw new Error("Fatal error in JsonConvert. " +
@@ -215,7 +215,7 @@ var JsonConvert = (function () {
                 "\tJSON property: \n\t\t" + jsonKey + "\n\n");
         }
         try {
-            instance[classPropertyName] = customConverter !== null ? customConverter.deserialize(jsonValue) : this.verifyProperty(expectedJsonType, jsonValue);
+            instance[classPropertyName] = customConverter !== null ? customConverter.deserialize(jsonValue, json) : this.verifyProperty(expectedJsonType, jsonValue);
         }
         catch (e) {
             throw new Error("Fatal error in JsonConvert. " +
@@ -400,4 +400,4 @@ var JsonConvert = (function () {
     return JsonConvert;
 }());
 exports.JsonConvert = JsonConvert;
-//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/src/json2typescript/json-convert.js.map
+//# sourceMappingURL=/Users/stephanechevreux/projects/json2typescript/src/json2typescript/json-convert.js.map

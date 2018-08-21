@@ -352,10 +352,10 @@ In some cases, you may need to make custom conversion between JSON objects and T
 ```typescript
 @JsonConverter
 class DateConverter implements JsonCustomConvert<Date> {
-    serialize(date: Date): any {
+    serialize(date: Date, parent: any): any {
         return date.getFullYear() + "-" + (date.getMonth() + 1) + "-" +  date.getDate();
     }
-    deserialize(date: any): Date {
+    deserialize(date: any, parent: any): Date {
         return new Date(date);
     }
 }

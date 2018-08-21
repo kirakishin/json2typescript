@@ -64,4 +64,4 @@ function JsonProperty() {
     };
 }
 exports.JsonProperty = JsonProperty;
-//# sourceMappingURL=C:/Utilisateurs/A599669/Documents/GitHub/json2typescript/src/json2typescript/json-convert-decorators.js.map
+//# sourceMappingURL=/Users/stephanechevreux/projects/json2typescript/src/json2typescript/json-convert-decorators.js.map

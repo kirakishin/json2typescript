@@ -15,19 +15,21 @@ export interface JsonCustomConvert<T> {
      * Please note that the argument or resulting object can be primitive.
      *
      * @param data TypeScript object
+     * @param parent TypeScript parent object
      *
      * @return {any} JSON object
      */
-    serialize(data: T): any;
+    serialize(data: T, parent?: any): any;
 
     /**
      * Converts an incoming JSON object object to a TypeScript object.
      * Please note that the argument or resulting object can be primitive.
-
+     *
      * @param data JSON object
+     * @param data JSON object parent
      *
      * @return {any} TypeScript object
      */
-    deserialize(data: any): T;
+    deserialize(data: any, parent?: any): T;
 
 }
